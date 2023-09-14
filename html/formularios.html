@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYcomponets</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/estilo.css">
+
+    <style>
+        .perfil-image {
+            border-radius: 50%;
+            width: 10rem;
+            height: 10rem;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="main_header fixed-header">
+        <nav class="main_nav">
+            <a href="#"><img class="perfil-image" src="/imagens/R.jpg" alt="perfil"></a>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tipografia.html">Tipografia</a></li>
+                <li><a href="cards.html">Cards</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="formularios.html">Formulario</a></li>
+                <li><a href="botões.html">Botões</a></li>
+                <li><a href="tabelas.html">Tabelas</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="main main_content">
+
+        <h1>My Components</h1>
+
+        <section>
+            <h2>Entre em contato</h2>
+
+            <div class="row">
+                <form action="">
+                    <div class="row">
+                        <div>
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" required autocomplete="off" placeholder="Nome Completo">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required autocomplete="off">
+                        </div>
+                    </div>
+
+                    <label for="mensagem">Digite sua mensagem</label>
+                    <textarea name="mensagem" id="mensagem" rows="6"></textarea>
+
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+
+                <address>
+                    <p><b>Endereço 1234 Someware rd. Nashiville, TN.00000 United stades</b></p>
+
+                        <p><b>Telefone 000-000-000</b></p>
+
+                       <p><b>Email  ffgui@ggmaeil.Com</b></p>
+                </address>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Quiz</h2>
+
+            <form action="" class="formate-quiz">
+                <label for="tecnologia">Qual é sua linguagem preferida?</label>
+                <select name="tecnologia" id="tecnologia">
+                    <option value="null">Selecionar</option>
+                    <option value="hrml">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+                </select>
+
+                <label>Baixa prioridade <input type="radio" name="prioridade" value="baixa"></label>
+                <label>Média prioridade <input type="radio" name="prioridade" value="media"></label>
+                <label>Alta prioridade <input type="radio" name="prioridade" value="alta"></label>
+
+                <label><input type="checkbox" name="copy" value="true"> Envie-me uma copia</label>
+                <label><input type="checkbox" name="humano" value="true"> Sou um humano</label>
+
+                <div class="row">
+                    <input type="reset" value="limpar" class="btn-2">
+                    <input type="submit" value="Enviar" class="btn">
+                </div>
+            </form>
+        
+        </section>
+    </main>
+
+</body>
+
+</html>

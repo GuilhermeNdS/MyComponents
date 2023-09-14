@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYcomponets</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/estilo.css">
+
+    <style>
+        .perfil-image {
+            border-radius: 50%;
+            width: 10rem;
+            height: 10rem;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="main_header fixed-header">
+        <nav class="main_nav">
+            <a href="#"><img class="perfil-image" src="/imagens/R.jpg" alt="perfil"></a>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tipografia.html">Tipografia</a></li>
+                <li><a href="cards.html">Cards</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="formularios.html">Formulario</a></li>
+                <li><a href="botões.html">Botões</a></li>
+                <li><a href="tabelas.html">Tabelas</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="main main_content">
+
+        <h1>My Components</h1>
+
+        <article class="hilight">
+            <h2>Botões</h2>
+            <p>Inputs (entrada de dados)permitem o(a) usuario(a) inreragir com a aplicação ou site e inserir conteúdo e dados.</p>
+            <p>Normalmente são usados em formulários, mas não somente, pois podem na verdade ser links com a aparencia de um botão.</p>
+        </article>
+
+        <section class="row_gap">
+            <div class="row">
+                <div class="botoes">
+                    <h3>Botão Normal</h3>
+                    <div class="formate_btn">
+                        <button class="btn btn_low button_dark">Button</button>
+                        <button class="btn btn_span button_dark">Button</button>
+                    </div>
+                </div>
+                <div class="botoes">
+                    <h3>Botão outline</h3>
+                    <div class="formate_btn">
+                        <button class="btn btn_low button_ligth">Button</button>
+                        <button class="btn btn_span button_ligth">Button</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="botoes">
+                    <h3>Botão Full</h3>
+                    <div class="formate_btn_full">
+                        <button class="btn btn_low_full button_dark">Button</button>
+                        <button class="btn btn_span_full button_dark">Button</button>
+                    </div>
+                </div>
+                <div class="botoes">
+                    <h3>Botão Full Outline</h3>
+                    <div class="formate_btn_full">
+                        <button class="btn btn_low_full button_ligth">Button</button>
+                        <button class="btn btn_span_full button_ligth">Button</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
